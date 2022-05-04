@@ -4,10 +4,17 @@ body {
 
 body h1 {
   font-size: 42px;
+  font-weight: 300;
+}
+
+body h3 {
+  font-size: 26px;
+  font-weight: 300;
 }
 
 body p {
-  font-size: 26px;
+  font-size: 15px;
+  font-weight: 300;
 }
 
 header {
@@ -48,7 +55,6 @@ header a {
 }
 
 .logo h1 {
-  font-weight: 300;
   padding-left: 20px;
 }
 
@@ -73,7 +79,6 @@ h2 {
   font-size: 64px;
   font-family: 'Source Sans Pro', sans-serif;
   padding-top: 25px;
-  font-weight: 400;
 }
 
 .slider-content {
@@ -93,9 +98,10 @@ h2 {
   width: 100%;
 }
 
-.slider-content .slider-text h1, .slider-content p {
+.slider-content .slider-text h1, .slider-content h3 {
   font-weight: 200;
   color: white;
+  width: 330px;
 }
 
 .slider-content .iphone {
@@ -112,5 +118,110 @@ h2 {
   font-family: "Segoe UI";
   font-size: 25px;
   font-weight: 100;
+}
+
+.section1 {
+  height: 500px;
+  width: auto;
+}
+
+.grid-container {
+  padding-top: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.grid-item {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  text-align: center;
+}
+
+.grid-item h3 {
+  font-weight: 300;
+  font-size: 20px;
+  color: #5094f2;
+}
+
+.grid-item p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.grid-item .circle1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  background-color: #5094f2;
+  margin: auto;
+}
+
+.grid-item .circle2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  background-color: #d94748;
+  margin: auto;
+}
+
+.grid-item .circle3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  background-color: #ebbb11;
+  margin: auto;
+}
+
+.section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 30px;
+  color: #6c6c6c;
+}
+
+.section2_text {
+  padding-left: 50px;
+  width: 30%;
 }
 /*# sourceMappingURL=style.css.map */
