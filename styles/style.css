@@ -130,7 +130,7 @@ h2 {
   min-width: 500px;
 }
 
-.grid-container {
+.section1 .grid-container {
   padding-top: 100px;
   display: -ms-grid;
   display: grid;
@@ -140,7 +140,7 @@ h2 {
   margin-right: 50px;
 }
 
-.grid-item {
+.section1 .grid-container .grid-item {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -149,18 +149,18 @@ h2 {
   text-align: center;
 }
 
-.grid-item h3 {
+.section1 .grid-container .grid-item h3 {
   font-weight: 300;
   font-size: 20px;
   color: #5094f2;
 }
 
-.grid-item p {
+.section1 .grid-container .grid-item p {
   font-weight: 300;
   font-size: 14px;
 }
 
-.grid-item .circle1 {
+.section1 .grid-container .grid-item .circle1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,7 +177,7 @@ h2 {
   margin: auto;
 }
 
-.grid-item .circle2 {
+.section1 .grid-container .grid-item .circle2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,7 +194,7 @@ h2 {
   margin: auto;
 }
 
-.grid-item .circle3 {
+.section1 .grid-container .grid-item .circle3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -227,13 +227,13 @@ h2 {
   min-width: 500px;
 }
 
-.section2_text {
+.section2 .section2_text {
   padding-left: 50px;
   width: 500px;
   min-width: 400px;
 }
 
-.section2_text p {
+.section2 .section2_text p {
   line-height: 3;
 }
 
