@@ -1,12 +1,12 @@
 body {
     font-family: "Segoe UI";
 
-    h1{
+    h1 {
         font-size: 42px;
         font-weight: 300;
     }
 
-    h3{
+    h3 {
         font-size: 26px;
         font-weight: 300;
     }
@@ -16,66 +16,69 @@ body {
         font-weight: 300;
     }
 }
+
 header {
     display: flex;
     justify-content: space-around;
     height: 90px;
     min-width: 630px;
 
-    div, ul {
+    .menu, .ul_menu {
         display: flex;
         justify-content: space-between;
-        list-style-type: none;
+       
         align-items: center;
         font-size: 20px;
-      
     }
 
-    ul {
+    .ul_menu {
         padding-top: 38px;
+        list-style-type: none;
     }
 
-    ul a:hover{
+    .ul_menu a:hover {
         border-bottom: 3px solid #5094f2;
-        }
+    }
         
-
-    a {
+    .a_menu {
         text-decoration: none;
         padding: 10px;
-        color: #6c6c6c;
-           
+        color: #6c6c6c;        
     }
 }
 
 .logo {
-
-    h1 {
-        padding-left: 20px;
-        }       
-}
-
-.element{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: #5094f2;
-}
+    justify-content: space-between;
+    align-items: center;    
 
-h2 {
-    color: white;
-    font-size: 64px;
-    font-family: 'Source Sans Pro', sans-serif;
-    padding-top: 25px;
-    
-   }
+
+    .h1_logo {
+        padding-left: 20px;
+    }       
+
+    .element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #5094f2;
+    }
+
+    .h2_logo {
+        color: white;
+        font-size: 64px;
+        font-family: 'Source Sans Pro', sans-serif;
+        padding-top: 25px;
+        
+    }
+}
 
 // slider     
   
-.slider-content{
+.slider_content {
     background-image: url("../img/prechu_background.png");
     background-repeat: no-repeat;
     padding-bottom: 43px;
@@ -88,18 +91,18 @@ h2 {
     width: 100%;
     min-width: 630px;
 
-    h1, h3{
+    .h1_slider_text, .h3_slider_text {
         font-weight: 200;
         color: white;
         width: 330px;
   
     }
 
-    .iphone{
+    .iphone {
         width:25%
     }
 
-    button {
+    .button {
         background-color: #5094f2;
         color: white;
         padding: 5px 15px 5px 15px;
@@ -122,7 +125,7 @@ h2 {
 
 
 
-.grid-container {
+.grid_container {
     padding-top: 100px;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -130,26 +133,26 @@ h2 {
     margin-right: 50px; 
 }
 
-.grid-item {
+.grid_item {
     align-self: center;
     justify-self: center;
     text-align: center;
     
    
 
-    h3 {
+    .h3_grid_item {
         font-weight: 300;
         font-size: 20px;
         color: #5094f2;
     }
 
-    p {
+    .p_grid_item {
         font-weight: 300;
         font-size: 14px;
     }
 
 
-    .circle1{
+    .circle1 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -161,8 +164,7 @@ h2 {
  
     }
 
-    
-    .circle2{
+    .circle2 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -174,7 +176,7 @@ h2 {
  
     }
 
-    .circle3{
+    .circle3 {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -182,12 +184,8 @@ h2 {
         width: 170px;
         border-radius: 50%;
         background-color: #ebbb11;
-        margin: auto;
- 
+        margin: auto; 
     }
-
-    
-   
 }
 
 .section2 {
@@ -202,75 +200,67 @@ h2 {
     text-align: center;
 }
 
-.section2_text{
-padding-left: 50px;
-width: 500px;
-min-width: 400px;
+.section2_text {
+    padding-left: 50px;
+    width: 500px;
+    min-width: 400px;
 
-
-p{
-    line-height: 3;
+    .p_section2_text {
+        line-height: 3;
+    }
 }
 
-    
-}
-
-.line{
+.line {
     margin-top:50px;
     margin-bottom: 25px;
     width: 100%;
     background-color: #b1b0b0;
     opacity: 0.4;
     height: 0.1px;
-
 }
 
-
-
 @media screen and (max-width: 936px) {
-    .slider-content{
-             
-    
+    .slider_content {
         padding-top: 30px;
         justify-content: space-around;
         align-items: center;
         height: auto;
         width: 100%;
     
-    h1{      
-        font-size: 32px;     
-    }
+        .h1_slider_text {      
+            font-size: 32px;     
+        }
 
-    h3{
-        font-size: 20px;
-    }
+        .h3_slider_text {
+            font-size: 20px;
+        }
 
     
-    button {
-        font-size: 18px;
-    }
+        .button {
+            font-size: 18px;
+        }
     }
 
-    .grid-container {
+    .grid_container {
        display: block;
     }
-    .grid-item{
+
+    .grid_item{
         padding-top: 50px ;
     }
+
     .section1 {
         height: auto;
     }    
 
     .section2_text {
         padding-left: 0;
-
     }
 }
    
 @media screen and (max-width: 660px) {
     .iphone {
-
-            display: none;
+        display: none;
     }
 }
 
