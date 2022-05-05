@@ -24,6 +24,7 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 90px;
+  min-width: 630px;
 }
 
 header div, header ul {
@@ -97,7 +98,7 @@ h2 {
           align-items: center;
   height: auto;
   width: 100%;
-  min-width: 500px;
+  min-width: 630px;
 }
 
 .slider-content h1, .slider-content h3 {
@@ -127,10 +128,10 @@ h2 {
           transform: translate(0, -20px);
   height: 500px;
   width: auto;
-  min-width: 500px;
+  min-width: 630px;
 }
 
-.section1 .grid-container {
+.grid-container {
   padding-top: 100px;
   display: -ms-grid;
   display: grid;
@@ -140,7 +141,7 @@ h2 {
   margin-right: 50px;
 }
 
-.section1 .grid-container .grid-item {
+.grid-item {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -149,18 +150,18 @@ h2 {
   text-align: center;
 }
 
-.section1 .grid-container .grid-item h3 {
+.grid-item h3 {
   font-weight: 300;
   font-size: 20px;
   color: #5094f2;
 }
 
-.section1 .grid-container .grid-item p {
+.grid-item p {
   font-weight: 300;
   font-size: 14px;
 }
 
-.section1 .grid-container .grid-item .circle1 {
+.grid-item .circle1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -177,7 +178,7 @@ h2 {
   margin: auto;
 }
 
-.section1 .grid-container .grid-item .circle2 {
+.grid-item .circle2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,7 +195,7 @@ h2 {
   margin: auto;
 }
 
-.section1 .grid-container .grid-item .circle3 {
+.grid-item .circle3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,16 +225,17 @@ h2 {
   flex-wrap: wrap;
   padding-top: 30px;
   color: #6c6c6c;
-  min-width: 500px;
+  min-width: 630px;
+  text-align: center;
 }
 
-.section2 .section2_text {
+.section2_text {
   padding-left: 50px;
   width: 500px;
   min-width: 400px;
 }
 
-.section2 .section2_text p {
+.section2_text p {
   line-height: 3;
 }
 
@@ -274,6 +276,9 @@ h2 {
   }
   .section1 {
     height: auto;
+  }
+  .section2_text {
+    padding-left: 0;
   }
 }
 
