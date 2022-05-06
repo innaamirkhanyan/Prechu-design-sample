@@ -1,3 +1,4 @@
+@import url(../img/icons/style.css);
 body {
   font-family: "Segoe UI";
 }
@@ -17,17 +18,28 @@ body p {
   font-weight: 300;
 }
 
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 header {
+  height: 90px;
+}
+
+.header-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 90px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
   min-width: 630px;
 }
 
-header .menu, header .ul_menu {
+.menu, .ul_menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,16 +52,16 @@ header .menu, header .ul_menu {
   font-size: 20px;
 }
 
-header .ul_menu {
+.ul_menu {
   padding-top: 38px;
   list-style-type: none;
 }
 
-header .ul_menu a:hover {
+.ul_menu a:hover {
   border-bottom: 3px solid #5094f2;
 }
 
-header .a_menu {
+.a_menu {
   text-decoration: none;
   padding: 10px;
   color: #6c6c6c;
@@ -298,5 +310,72 @@ header .a_menu {
   .iphone {
     display: none;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 11fr auto;
+      grid-template-rows: auto 11fr auto;
+      grid-template-areas: "header" "content" "footer";
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.content {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: content;
+  background-color: red;
+  font-size: 60px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  background-color: green;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 60px;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  background-color: gray;
 }
 /*# sourceMappingURL=style.css.map */
