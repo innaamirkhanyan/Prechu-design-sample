@@ -1,21 +1,14 @@
 @import url(../img/icons/style.css);
-body {
-  font-family: "Segoe UI";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Segoe UI';
 }
 
-body h1 {
-  font-size: 42px;
-  font-weight: 300;
-}
-
-body h3 {
-  font-size: 26px;
-  font-weight: 300;
-}
-
-body p {
-  font-size: 15px;
-  font-weight: 300;
+html, body {
+  height: 100%;
 }
 
 .container {
@@ -79,11 +72,13 @@ header {
           align-items: center;
 }
 
-.logo .h1_logo {
+.h1_logo {
+  font-size: 42px;
+  font-weight: 300;
   padding-left: 20px;
 }
 
-.logo .element {
+.element {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,24 +94,28 @@ header {
   background-color: #5094f2;
 }
 
-.logo .h2_logo {
+.h2_logo {
   color: white;
   font-size: 64px;
   font-family: 'Source Sans Pro', sans-serif;
   padding-top: 25px;
 }
 
-.slider_content {
-  background-image: url("../img/prechu_background.png");
+.slider_background {
+  background-image: url("../assets/img/prechu_background.png");
   background-repeat: no-repeat;
   padding-bottom: 43px;
   background-size: cover;
+}
+
+.slider_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 30px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -125,17 +124,28 @@ header {
   min-width: 630px;
 }
 
-.slider_content .h1_slider_text, .slider_content .h3_slider_text {
-  font-weight: 200;
+.h2_slider_text {
+  font-weight: 400;
+  color: white;
+  width: 430px;
+  line-height: 1.5;
+  font-size: 42px;
+}
+
+.h3_slider_text {
+  font-weight: 400;
+  line-height: 2;
   color: white;
   width: 330px;
+  margin-bottom: 30px;
+  font-size: 26px;
 }
 
-.slider_content .iphone {
-  width: 25%;
+.iphone {
+  width: auto;
 }
 
-.slider_content .button {
+.button {
   background-color: #5094f2;
   color: white;
   padding: 5px 15px 5px 15px;
@@ -146,13 +156,11 @@ header {
   font-weight: 100;
 }
 
-.section1 {
-  background-image: url("../img/white_background.png");
+.section1_background {
+  background-image: url("../assets/img/white_background.png");
   -webkit-transform: translate(0, -20px);
           transform: translate(0, -20px);
-  height: 500px;
-  width: auto;
-  min-width: 630px;
+  height: 450px;
 }
 
 .grid_container {
@@ -161,31 +169,26 @@ header {
   display: grid;
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
 .grid_item {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
   text-align: center;
 }
 
-.grid_item .h3_grid_item {
-  font-weight: 300;
+.h3_grid_item {
+  font-weight: 500;
   font-size: 20px;
   color: #5094f2;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
-.grid_item .p_grid_item {
-  font-weight: 300;
+.p_grid_item {
+  font-weight: 200;
   font-size: 14px;
 }
 
-.grid_item .circle1 {
+.circle1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,7 +205,7 @@ header {
   margin: auto;
 }
 
-.grid_item .circle2 {
+.circle2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,7 +222,7 @@ header {
   margin: auto;
 }
 
-.grid_item .circle3 {
+.circle3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,21 +249,30 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 30px;
   color: #6c6c6c;
   min-width: 630px;
-  text-align: center;
+}
+
+.h2_shopping_cart {
+  font-size: 42px;
+  font-weight: 400;
+  padding-bottom: 30px;
 }
 
 .section2_text {
-  padding-left: 50px;
-  width: 500px;
+  padding-left: 80px;
+  width: 540px;
   min-width: 400px;
 }
 
-.section2_text .p_section2_text {
-  line-height: 3;
+.h3_section2_text {
+  font-size: 26px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+.p_section2_text {
+  line-height: 2.5;
 }
 
 .line {
@@ -270,6 +282,11 @@ header {
   background-color: #b1b0b0;
   opacity: 0.4;
   height: 0.1px;
+}
+
+.copyright {
+  text-align: center;
+  color: #b1b0b0;
 }
 
 @media screen and (max-width: 936px) {
@@ -283,13 +300,13 @@ header {
     height: auto;
     width: 100%;
   }
-  .slider_content .h1_slider_text {
+  .h2_slider_text {
     font-size: 32px;
   }
-  .slider_content .h3_slider_text {
+  .h3_slider_text {
     font-size: 20px;
   }
-  .slider_content .button {
+  .button {
     font-size: 18px;
   }
   .grid_container {
@@ -310,72 +327,5 @@ header {
   .iphone {
     display: none;
   }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-.wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto 11fr auto;
-      grid-template-rows: auto 11fr auto;
-      grid-template-areas: "header" "content" "footer";
-  width: 100%;
-  height: 100%;
-  color: white;
-}
-
-.content {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: content;
-  background-color: red;
-  font-size: 60px;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 60px;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: header;
-  background-color: green;
-}
-
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 60px;
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footer;
-  background-color: gray;
 }
 /*# sourceMappingURL=style.css.map */
